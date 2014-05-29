@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1E529AC4-EAAA-4366-BC94-7F880D6F04FE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ip Planner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9EDD2777-FFC1-4EA5-A08C-BC6432807BD1</key>
+		<string>https://github.com/maa1371/ip-Planner.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ip Planner.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9EDD2777-FFC1-4EA5-A08C-BC6432807BD1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maa1371/ip-Planner.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9EDD2777-FFC1-4EA5-A08C-BC6432807BD1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9EDD2777-FFC1-4EA5-A08C-BC6432807BD1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ip Planner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
