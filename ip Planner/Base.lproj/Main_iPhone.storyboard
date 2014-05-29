@@ -1061,11 +1061,11 @@
             </objects>
             <point key="canvasLocation" x="639" y="345"/>
         </scene>
-        <!--Ip Navigation View Controller - ip Bound-->
+        <!--Ip Navigation View Controller - IP Bound-->
         <scene sceneID="agw-bp-S7k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r4f-ts-ywZ" customClass="ipNavigationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ip Bound" image="ip.ico" id="Szr-k4-hCt"/>
+                    <tabBarItem key="tabBarItem" title="IP Bound" image="ip.ico" id="Szr-k4-hCt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ayx-re-rhl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

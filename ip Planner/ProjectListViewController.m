@@ -246,35 +246,45 @@ int  myindex;
     
 }
 
+
+
+
+
+
 - (IBAction)editAction:(id)sender {
     
     if (edithEnable) {
         
+        NSLog(@"HERE");
         self.navigationItem.leftBarButtonItems = @[addButton];
 
         // Deselect all selected items
         for(NSIndexPath *indexPath in self.collectionView.indexPathsForSelectedItems) {
             [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
         }
-        
-        // Remove all items from selectedRecipes array
-        [cellSelected removeAllObjects];
+       
         
         // Change the sharing mode to NO
         self.collectionView.allowsMultipleSelection = NO;
+        
+
+        // Remove all items from selectedRecipes array
+        [cellSelected removeAllObjects];
+        
        
         self.editButton.title = @"Edit";
         
         self.plusHidden.enabled=YES;
+
         edithEnable = NO;
         
-      //  [self.editButton setStyle:UIBarButtonItemStyleDone];
         [self.collectionView reloadData];
-
-    } else {
         
+    } else {
         // Change shareEnabled to YES and change the button text to DONE
+
         [cellSelected removeAllObjects];
+        
         deleteButton.enabled=NO;
         renameButton.enabled=NO;
         self.navigationItem.leftBarButtonItems = @[deleteButton,renameButton];
@@ -285,7 +295,6 @@ int  myindex;
         self.collectionView.allowsMultipleSelection = YES;
         self.plusHidden.enabled=NO;
         self.editButton.title = @"Done";
-
         [self.collectionView reloadData];
       //  [self.editButton setStyle:UIBarButtonItemStylePlain];
         
@@ -465,10 +474,9 @@ int  myindex;
     label300.hidden=YES;
     [currentProject setProjectName:[[ProjectList objectAtIndex:indexPath.row] ProjectName]];
     label200.text =[currentProject ProjectName];
-    if (edithEnable) {
+    if (/*edithEnable*/1) {
 //        cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"delete.png"]];
-       
-        if (cell.selected==YES) {
+        if ((cell.selected==YES) ) {
             recipeImageView.hidden=YES;
         }else{
             recipeImageView.hidden=NO;
