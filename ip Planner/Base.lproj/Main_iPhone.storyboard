@@ -1025,7 +1025,7 @@
         <scene sceneID="ESp-ok-W6p">
             <objects>
                 <navigationController title="NetworkList" automaticallyAdjustsScrollViewInsets="NO" id="7S3-dC-RZz" customClass="ipNavigationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="htB-gG-se9"/>
+                    <tabBarItem key="tabBarItem" title="Network List" image="list.png" id="htB-gG-se9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GW4-VM-b4Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1061,11 +1061,11 @@
             </objects>
             <point key="canvasLocation" x="639" y="345"/>
         </scene>
-        <!--Ip Navigation View Controller-->
+        <!--Ip Navigation View Controller - ip Bound-->
         <scene sceneID="agw-bp-S7k">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r4f-ts-ywZ" customClass="ipNavigationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Szr-k4-hCt"/>
+                    <tabBarItem key="tabBarItem" title="ip Bound" image="ip.ico" id="Szr-k4-hCt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ayx-re-rhl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1099,6 +1099,10 @@
             <point key="canvasLocation" x="2256" y="1140"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ip.ico" width="32" height="32"/>
+        <image name="list.png" width="28" height="28"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
