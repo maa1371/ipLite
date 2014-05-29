@@ -635,26 +635,29 @@ int  myindex;
     devices = [[managedObjectContext executeFetchRequest:fetchRequest1 error:nil] mutableCopy];
     
     
-    
     NSLog(@"main project ID %d",projectID+1);
 
     
-    
+    int realIndex=0;
     for (NSManagedObject *obj in fetchedObjects) {
         NSLog(@"project ID %d",[[obj valueForKey:@"projectID"]intValue]);
+       
         
-        if ([[obj valueForKey:@"projectID"]intValue]==projectID+1) {
+      if ([[obj valueForKey:@"projectID"]intValue]==projectID+1) {
             
             int index=0;
             
-            index=[[obj valueForKey:@"networkID"]integerValue];
-            
-            [context deleteObject:[devices objectAtIndex:index-1]];
+           // index=[[obj valueForKey:@"networkID"]integerValue];
+          
+          
+          
+            [context deleteObject:[devices objectAtIndex:realIndex]];
            
             NSLog(@"delte network index  %d of project ID :: %d",index,projectID+1);
         
         }
         
+        realIndex++;
         
     }
     
