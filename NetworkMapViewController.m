@@ -25,7 +25,9 @@ NSMutableArray * serverNum;
 
 NSMutableArray * clientsNumround;
 NSMutableArray * serverNumround;
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor clearColor]];
+}
 -(UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;

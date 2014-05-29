@@ -355,7 +355,7 @@ int  myindex;
     if ([ProjectList count]==0) {
         ID=1;
     }else{
-        int i=[ProjectList count];
+        int i=(int)[ProjectList count];
         i--;
         ID=[[[ProjectList objectAtIndex:i]projectID]intValue];
         ID++;
@@ -595,7 +595,7 @@ int  myindex;
         int amin=0;
         
         
-        amin=[ProjectList count];
+        amin=(int)[ProjectList count];
         
         [ProjectList addObject:newProject];
 

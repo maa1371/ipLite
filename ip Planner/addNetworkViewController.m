@@ -16,7 +16,9 @@
 @implementation addNetworkViewController
 
 @synthesize saveButton,networkName,clientNumber,serverNumber;
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.1]];
+}
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     textField.delegate = self;
     int Enable=0;

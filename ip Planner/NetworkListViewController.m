@@ -26,7 +26,9 @@
 
 //NSArray *fetchedObjects;
 //NSManagedObject *selectedObject;
-
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor clearColor]];
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"EditNetwork"]) {
@@ -302,7 +304,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         
         [projectList replaceObjectAtIndex:[projectList indexOfObject:currentProject] withObject:currentProject];
         
-          [self DbDeleteNetwork:indexPath.row];
+          [self DbDeleteNetwork:(int)indexPath.row];
+        
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
         

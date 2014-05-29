@@ -38,6 +38,9 @@ NSMutableArray *ipAval;
 NSArray *fetchedObjects;
 NSManagedObject *selectedObject;
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.1]];
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"NetworkMap"]) {

@@ -15,6 +15,9 @@
 @implementation MapDetailsViewController
 
 ///header of static group
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.1]];
+}
 
 -    (void) tableView : (UITableView*) tableView
 willDisplayHeaderView : (UIView*) view
